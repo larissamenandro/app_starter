@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Curso Javascript</title>
+    <meta charset="utf-8"/> 
+    Início
+  </head>
+  <body>
+    <script type="text/javascript">
+      
+      //Var texto (string)
+      var nome="Larissa";
+      var local_de_nascimento="Brasília";
+      
+      //Var booleana
+      var humana=true;
+      
+      //Var numerica
+      var idade=29;
+      var segundos_totais=720;
+      var segundos_por_minutos=60;
+      var x=10, y=5;
+
+      //operações matemáticas
+      x = 3;
+      x *= 3; //x = x*3
+      x %= y  //mod
+          
+
+      console.log(x);
+      console.log(equa1);
+
+
+      //Var de data
+      var data_de_nascimento= new Date(1990, 09, 10);
+      var data_de_hoje= new Date();
+
+      //Var vetor
+      var irmaos=["Lorena","Marília","Luana","Rodrigo","João Paulo","Mateus","Júnior"];
+
+      //objeto com propriedades
+      var usuario = {
+        nome: 'Larissa',
+        data_de_nascimento: new Date(1990, 09, 10),
+        data_de_cadastro: new Date(2020, 07, 09),
+        idade: 29,
+        irmaos:["Lorena","Marília","Luana","Rodrigo","João Paulo","Mateus","Júnior"]
+
+      };
+                
+      //Console
+      console.log("data_de_nascimento => ", data_de_nascimento);
+      console.log("Irmãs =>", irmaos[0], ",", irmaos[1]);
+      console.log("Irmãos =>", irmaos, "fofos");
+      console.log("quantidade de minutos =>",segundos_totais/segundos_por_minutos,"minutos");
+      console.log('calculadora',560/10);
+      
+      //Mostra apenas o ano em uma Data
+      console.log("data_de_nascimento: " + usuario.data_de_nascimento.getFullYear());
+      //objeto x variável - posição no array
+      console.log("Lê objeto: " + usuario.irmaos[0]);
+      console.log("Lê posição vetor: " + irmaos[0]);
+
+      //observações:
+      //alterar palavras iguais> selecionar: ctrl+F2
+      //copiar linha: alt+shift
+      // /* transformar algo em comentário, finalizar com */ ou shift+alt+a
+      
+      
+
+
+    </script>
+  </body>
+</html>
