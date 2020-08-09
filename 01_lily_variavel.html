@@ -20,16 +20,8 @@
       var segundos_totais=720;
       var segundos_por_minutos=60;
       var x=10, y=5;
-
-      //operações matemáticas
-      x = 3;
-      x *= 3; //x = x*3
-      x %= y  //mod
-          
-
       console.log(x);
-      console.log(equa1);
-
+     
 
       //Var de data
       var data_de_nascimento= new Date(1990, 09, 10);
@@ -38,7 +30,7 @@
       //Var vetor
       var irmaos=["Lorena","Marília","Luana","Rodrigo","João Paulo","Mateus","Júnior"];
 
-      //objeto com propriedades
+      //var objeto com propriedades
       var usuario = {
         nome: 'Larissa',
         data_de_nascimento: new Date(1990, 09, 10),
@@ -47,7 +39,14 @@
         irmaos:["Lorena","Marília","Luana","Rodrigo","João Paulo","Mateus","Júnior"]
 
       };
-                
+
+      //var ternária
+      var estado_civil = 1;
+      var resultadosc = (estado_civil = 10) ? 'Solteiro' : 'Casado';
+      console.log(resultadosc);
+      
+
+      /////////////////////////////////////////////////////////////////////////////
       //Console
       console.log("data_de_nascimento => ", data_de_nascimento);
       console.log("Irmãs =>", irmaos[0], ",", irmaos[1]);
@@ -61,10 +60,12 @@
       console.log("Lê objeto: " + usuario.irmaos[0]);
       console.log("Lê posição vetor: " + irmaos[0]);
 
-      //observações:
+      
+      //////////////////////////////////////////////////////////////////////////////
+      /*observações:
       //alterar palavras iguais> selecionar: ctrl+F2
       //copiar linha: alt+shift
-      // /* transformar algo em comentário, finalizar com */ ou shift+alt+a
+      // barra asterisco transformar algo em comentário, finalizar com asterisco barra.  ou shift+alt+a */
       
       
 

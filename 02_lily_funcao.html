@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Curso Javascript</title>
+    <meta charset="utf-8"/> 
+    Início
+  </head>
+  <body>
+    <script type="text/javascript">
+      
+      /////////////////////////////////////////////////////////////////////////////
+      //soma
+      function fn_soma(numero1,numero2) {
+      // function = nome da funçao(parametro1, parametro2) 
+        
+          var soma = (numero1+numero2);
+          //var resultado = (2*numero1 + numero2)/2;
+
+          return soma;
+      }
+      
+      var resultado_da_soma = fn_soma(4,2);
+      console.log("Soma", resultado_da_soma);
+
+
+      /////////////////////////////////////////////////////////////////////////////
+      //divisão
+      function fn_divisão(numero1,numero2) {
+
+        var divisao = (numero1/numero2);
+
+        return divisao;
+      }
+
+      var resultado_da_divisao = fn_divisão(10, 5);
+      console.log("Divisão", resultado_da_divisao);
+
+
+      /////////////////////////////////////////////////////////////////////////////
+      //par ou impar
+      function fn_par_ou_impar(parametro_numerico) {
+        var resultado = parametro_numerico %2 ;
+
+        switch (resultado) {
+          case 0 :
+            return 'É par ';
+          default:
+            return 'É impar' ;
+        }
+      }
+
+      var par_ou_impar = fn_par_ou_impar(13);
+      console.log("Este número", par_ou_impar);
+
+      
+        /*if (parametro_numerico %2 == 0) {
+         return 'É par ' + parametro_numerico;
+       } else {
+         return 'É impar' + parametro_numerico;
+        }
+      
+        if (parametro_numerico %2 == 0) {
+         return 'É par ' + parametro_numerico;
+       }
+       if (parametro_numerico %2 != 0) {
+         return 'É impar'
+        }*/
+
+  
+      
+
+      /////////////////////////////////////////////////////////////////////////////
+        //condição
+      function fn_mes_extenso(mes_numeral) {
+        switch (mes_numeral) {
+          case 1:
+            return 'Janeiro';
+          case 2:
+            return 'Fevereiro';
+          case 3:
+            return 'Março';
+          case 4:
+            return 'Abril';
+          case 5:
+            return 'Maio';
+          case 6:
+            return 'Junho';
+          case 7:
+            return 'Julho';
+          case 8:
+            return 'Agosto';
+          case 9:
+            return 'Setembro';
+          case 10:
+            return 'Outubro';
+          case 11:
+            return 'Novembro';
+          case 12:
+            return 'Dezembro';
+        }
+      }
+
+      var mes_extenso = fn_mes_extenso(12);
+      console.log("O mês por extenso é " + mes_extenso);
+                     
+
+      /////////////////////////////////////////////////////////////////////////////
+      /*var mes_extenso = fn_mes_extenso(1);
+      console.log("Mês" + mes + "é" + mes_extenso);*/
+
+    </script>
+  </body>
+</html>
