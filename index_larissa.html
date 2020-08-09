@@ -21,6 +21,8 @@
       var idade=29;
       var segundos_totais=720;
       var segundos_por_minutos=60;
+      var x=8, y=9;
+    
       
       // Variáveis de data
       var data_de_nascimento= new Date(1990, 01, 10);
@@ -36,15 +38,19 @@
         
       };
 
+    
+      
       //Mostra apenas o ano em uma Data
       console.log("Ano de cadastro: " + usuario.data_cadastro.getFullYear());
       //Exemplo de exibição de uma posição de array dentro de um objeto
       console.log("Lê objeto: " + usuario.irmaos[0]);
       //Exemplo de exibição de uma posição de variável de array
-      console.log("Lê posição vetor: " + irmaos[0]);
+      console.log("Lê posição vetor: " + irmaos[1]);
 
-
-      
+      //operações matemáticas entre variáveis
+      //ao utilizar uma variável na operação, não precisa escreve-la novamente, o simbolo de operação junto como = signfica que ele ira copiar a variavel para a operação X /= Y
+      console.log(x*=y); //significa x = x * y
+      console.log(x/=y);
 
 
 
