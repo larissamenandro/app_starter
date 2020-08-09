@@ -7,9 +7,48 @@
   </head>
   <body>
     <script type="text/javascript">
+      
+      function fn_soma(numero1, numero2) {
+        var resultado = numero1 + numero2;
+
+        return resultado;
+      }
+      var resultado = fn_soma(10, 10);
+      //console.log("Resultado função fn_soma : " + resultado);
 
 
+      function fn_par_ou_impar(parametro_numerico) {
+        var resultado = parametro_numerico %2 ;
 
+        switch (resultado) {
+          case 0 :
+            return 'É par ';
+          default:
+            return 'É impar' ;
+        }
+      }
+        
+        /*
+        if (parametro_numerico %2 == 0) {
+          return 'É par ' + parametro_numerico;
+        } else {
+          return 'É impar' + parametro_numerico;
+        }
+        */
+        
+        /*
+        if (parametro_numerico %2 == 0) {
+          return 'É par ' + parametro_numerico;
+        if (parametro_numerico %2 != 0) {
+          return 'É impar'
+        }
+      
+      
+        */
+      var resultado_par_ou_impar = fn_par_ou_impar(99);
+      console.log(resultado_par_ou_impar);
+    
+    // fim do javascript
     </script>
   </body>
 </html>
