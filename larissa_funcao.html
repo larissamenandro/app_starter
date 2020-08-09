@@ -7,7 +7,9 @@
   </head>
   <body>
     <script type="text/javascript">
-      
+    
+    ///////////////////////////////////////////////////////////      
+      //Função que soma dois numeros passado por parametro      
       function fn_soma(numero1, numero2) {
         var resultado = numero1 + numero2;
 
@@ -17,6 +19,9 @@
       //console.log("Resultado função fn_soma : " + resultado);
 
 
+    
+      ///////////////////////////////////////////////////////////  
+      //Função que verifica que um número passado por parametro é impar ou par
       function fn_par_ou_impar(parametro_numerico) {
         var resultado = parametro_numerico %2 ;
 
@@ -27,26 +32,68 @@
             return 'É impar' ;
         }
       }
-        
-        /*
-        if (parametro_numerico %2 == 0) {
-          return 'É par ' + parametro_numerico;
-        } else {
-          return 'É impar' + parametro_numerico;
-        }
-        */
-        
-        /*
-        if (parametro_numerico %2 == 0) {
-          return 'É par ' + parametro_numerico;
-        if (parametro_numerico %2 != 0) {
-          return 'É impar'
-        }
-      
-      
-        */
+
       var resultado_par_ou_impar = fn_par_ou_impar(99);
-      console.log(resultado_par_ou_impar);
+      // console.log(resultado_par_ou_impar);
+
+    
+    
+      ///////////////////////////////////////////////////////////  
+      //Função que recebe um numero de 1 a 12 e informa o mês por escrito
+      function fn_mes_extenso(parametro_mes_numerico) {
+        switch (parametro_mes_numerico) {
+          case 1 :   
+            return 'Janeiro';
+          case 2 :
+            return 'Fevereiro';
+          case 3 :
+            return 'Março';
+          case 4 :
+            return 'Abril';
+          case 5 :
+            return 'Maio';
+          case 6 :
+            return 'Junho';
+          case 7 :
+            return 'Julho';
+          case 8 :
+            return 'Agosto';
+          case 9 :
+            return 'Setembro';
+          case 10 :
+            return 'Outubro';
+          case 11 :
+            return 'Novembro';
+          case 12 :
+            return 'Dezembro';
+
+          default : 
+            return 'Número invalido'; 
+        }
+
+      }
+      var mes_extenso = fn_mes_extenso(12);
+      console.log("O Mês por extenso é: " + mes_extenso);
+
+
+    ///////////////////////////////////////////////////////////  
+    // outras formas de fazer a função fn_par_ou_impar
+    /*
+    if (parametro_numerico %2 == 0) {
+        return 'É par ' + parametro_numerico;
+    } else {
+        return 'É impar' + parametro_numerico;
+    }
+    */
+    
+    /*
+    if (parametro_numerico %2 == 0) {
+        return 'É par ' + parametro_numerico;
+    if (parametro_numerico %2 != 0) {
+        return 'É impar'
+    }
+    */
+    ///////////////////////////////////////////////////////////
     
     // fim do javascript
     </script>
